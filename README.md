@@ -2,8 +2,6 @@
 
 ### Update əməliyyatları JSON mapping ilə idarə olunur, yəni hansı hüceyrələr update olunacaqsa update_config.json-da göstərilir.
 
-[Google Sheet Linki](https://docs.google.com/spreadsheets/d/1LyRAQfkJlQ_SOicVMxbovuPTc5-14Hj7wKNlS2YnPOI/edit?usp=sharing)
-
 
 - main.py                   Əsas run ediləcək script
 - read_sheet.py             Google Sheets-dən oxuma funksiyaları
