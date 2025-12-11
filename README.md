@@ -9,7 +9,9 @@ Update əməliyyatları JSON mapping ilə idarə olunur, yəni hansı hüceyrəl
 - update_config.json        Update mapping (range və values)
 - config.py                 sheets_id və scopes təyin olunur
 
-⚡ Quraşdırma
+---
+
+## Quraşdırma
 
 - Virtual environment yaradın:
 
@@ -36,8 +38,10 @@ scopes = ["https://www.googleapis.com/auth/spreadsheets"]
 
 Google Service Account açarını keys.json olaraq yerləşdirin.
 
+---
+
 - İstifadə qaydası (terminalda):
-- 1️⃣ Read etmək
+## 1️⃣ Read etmək
 
 Default range (A1:Z500) ilə oxumaq:
 ```bash
@@ -49,7 +53,9 @@ Müəyyən range ilə oxumaq:
 python main.py read "A1:C10"
 ```
 
-- 2️⃣ Write etmək (lokala CSV + JSON)
+---
+
+## 2️⃣ Write etmək (lokala CSV + JSON)
 
 Default range (A1:Z500) ilə:
 ```bash
@@ -67,9 +73,11 @@ sheet_data.csv
 
 sheet_data.json
 
-- 3️⃣ Update etmək (JSON mapping ilə)
+---
 
-update_config.json faylında update etmək istədiyiniz hüceyrələri və dəyərləri qeyd edin:
+## 3️⃣ Update etmək (JSON mapping ilə)
+
+- update_config.json faylında update etmək istədiyiniz hüceyrələri və dəyərləri qeyd edin:
 ```bash
 {
   "updates": [
