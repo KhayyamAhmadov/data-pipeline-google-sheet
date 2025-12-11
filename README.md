@@ -1,5 +1,6 @@
-Bu Python layihəsi Google Sheets-dən data oxumaq, lokala yazmaq (CSV/JSON) və update etmək üçün hazırlanmışdır.
-Update əməliyyatları JSON mapping ilə idarə olunur, yəni hansı hüceyrələr update olunacaqsa update_config.json-da göstərilir.
+### Bu Python kodları Google Sheets-dən data oxuyur, lokala yazır (CSV/JSON) və update edir.
+
+### Update əməliyyatları JSON mapping ilə idarə olunur, yəni hansı hüceyrələr update olunacaqsa update_config.json-da göstərilir.
 
 
 - main.py                   Əsas run ediləcək script
@@ -36,19 +37,19 @@ sheets_id = "YOUR_SHEET_ID"
 scopes = ["https://www.googleapis.com/auth/spreadsheets"]
 ```
 
-Google Service Account açarını keys.json olaraq yerləşdirin.
+- Google Service Account açarını keys.json olaraq yerləşdirin.
 
 ---
 
-- İstifadə qaydası (terminalda):
+## İstifadə qaydası (terminalda):
 ## 1️⃣ Read etmək
 
-Default range (A1:Z500) ilə oxumaq:
+- Default range (A1:Z500) ilə oxumaq:
 ```bash
 python main.py read
 ```
 
-Müəyyən range ilə oxumaq:
+- Müəyyən range ilə oxumaq:
 ```bash
 python main.py read "A1:C10"
 ```
@@ -57,21 +58,22 @@ python main.py read "A1:C10"
 
 ## 2️⃣ Write etmək (lokala CSV + JSON)
 
-Default range (A1:Z500) ilə:
+- Default range (A1:Z500) ilə:
 ```bash
 python main.py write
 ```
 
-Müəyyən range ilə:
+- Müəyyən range ilə:
 ```bash
 python main.py write "A1:C20"
 ```
 
 - Lokala yazılan fayllar:
-
+```bash
 sheet_data.csv
 
 sheet_data.json
+```
 
 ---
 
@@ -87,8 +89,8 @@ sheet_data.json
 }
 ```
 
-Update əməliyyatı:
+- Update əməliyyatı:
 ```bash
 python main.py update
 ```
-Script bütün mapping-ləri oxuyub Google Sheet-ə update edəcək.
+- Script bütün mapping-ləri oxuyub Google Sheet-ə update edəcək.
