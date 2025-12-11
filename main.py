@@ -1,9 +1,11 @@
-# main.py
 import sys
 import json
 from read_sheet import read_sheet
 from write_local import write_to_csv, write_to_json
 from update_sheet import update_sheet
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+
 
 def run_read(range_="A1:Z500"):
     print(f"Google Sheets-dən {range_} aralığı oxunur.")
