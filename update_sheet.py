@@ -1,4 +1,3 @@
-# update_sheet.py
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
 from config import sheets_id, scopes
@@ -11,12 +10,5 @@ sheet = service.spreadsheets()
 
 def update_sheet(range_, values):
     body = {"values": values}
-
     result = sheet.values().update(spreadsheetId=sheets_id, range=range_, valueInputOption="RAW", body=body).execute()
-
     return result
-
-if __name__ == "__main__":
-    # A1 hüceyrəsinə update
-    update_sheet("A1", [["Hello World"]])
-    print("Updated!")

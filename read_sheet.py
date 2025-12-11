@@ -8,14 +8,7 @@ credentials = Credentials.from_service_account_file(service_account_file, scopes
 service = build('sheets', 'v4', credentials=credentials)
 sheet = service.spreadsheets()
 
-range_="A1:Z500"
-
-def read_sheet(range=range_):
-    result = sheet.values().get(spreadsheetId=sheets_id, range=range).execute()
-
+def read_sheet(range_="A1:Z500"):
+    result = sheet.values().get(spreadsheetId=sheets_id, range=range_).execute()
     data = result.get("values", [])
     return data
-
-if __name__ == "__main__":
-    data = read_sheet()
-    print(data)

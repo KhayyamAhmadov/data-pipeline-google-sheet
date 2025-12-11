@@ -1,0 +1,7 @@
+{
+  "updates": [
+    {"range": "A1", "values": [["Hello"]]},
+    {"range": "B2:C2", "values": [["Foo","Bar"]]},
+    {"range": "D4", "values": [["42"]]}
+  ]
+}
