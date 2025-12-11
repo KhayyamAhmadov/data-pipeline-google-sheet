@@ -3,12 +3,12 @@
 ### Update əməliyyatları JSON mapping ilə idarə olunur, yəni hansı hüceyrələr update olunacaqsa update_config.json-da göstərilir.
 
 
-- main.py                   Əsas run ediləcək script
-- read_sheet.py             Google Sheets-dən oxuma funksiyaları
-- write_local.py            CSV və JSON-lokala yazma funksiyaları
-- update_sheet.py           Google Sheets-ə update funksiyaları
-- update_config.json        Update mapping (range və values)
-- config.py                 sheets_id və scopes təyin olunur
+- main.py                   -- Əsas run ediləcək script
+- read_sheet.py             -- Google Sheets-dən oxuma funksiyaları
+- write_local.py            -- CSV və JSON-lokala yazma funksiyaları
+- update_sheet.py           -- Google Sheets-ə update funksiyaları
+- update_config.json        -- Update mapping (range və values)
+- config.py                 -- sheets_id və scopes təyin olunur
 
 ---
 
